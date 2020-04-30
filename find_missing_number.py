@@ -2,4 +2,5 @@
 
 
 def find_missing_number(numbers):
-    return sum([i for i in range(1, len(numbers) + 2)]) - sum(numbers)
+    numbers_length = len(numbers) + 2
+    return (numbers_length*numbers_length-numbers_length) / 2 - sum(numbers)
