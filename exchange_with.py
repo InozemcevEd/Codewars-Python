@@ -3,5 +3,7 @@
 
 def reverse(seq):
     for i in range((len(seq) - 1) // 2):
-        seq[i], seq[len(seq) - 1 - i] = seq[len(seq) - 1 - i], seq[i]
+        reverse_i = len(seq) - 1 - i
+        seq[i], seq[reverse_i] = seq[reverse_i], seq[i]
+
     return seq
